@@ -37,8 +37,8 @@ class CARDVIDEOS{
 }
 
 createCard = () =>{
-    
+    var main = document.querySelector(".listVideos")
+    var cardPrograming = new CARDVIDEOS("python","Playlist de programação na linguagem python3","../imgs/javascript.jpg","Capa ilustrativa Python")
+    main.innerHTML = cardPrograming.blockCardVideos()    
 }
-var main = document.querySelector(".listVideos")
-var cardPrograming = new CARDVIDEOS("python","Playlist de programação na linguagem python3","../imgs/javascript.jpg","Capa ilustrativa Python")
-main.innerHTML = cardPrograming.blockCardVideos()
+createCard()
