@@ -74,6 +74,11 @@ h4{
     width: 100%;
     text-align: center;
 }
+.screenVideoLegenda{
+    width: 100%;
+    height: 600px;
+    background-color: blue;
+}
 /*
 <div class="cardVideos">
     <div class="img">

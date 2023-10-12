@@ -1,13 +1,14 @@
 export class CARDVIDEOS{
-    constructor(title,subTitle,img,altImg){
+    constructor(title,subTitle,img,altImg,id){
         this.title = title;
         this.subTitle = subTitle;
         this.img = img;
         this.altImg = altImg;
+        this.id = id;
     }
     createCard(){
         var listVideos = document.querySelector(".listVideos")
-        listVideos.innerHTML += `<div class="cardVideos">
+        listVideos.innerHTML += `<div class="cardVideos" id="${this.id}">
             <div class="img">
                 <img src="${this.img}" alt="${this.altImg}">
             </div>
